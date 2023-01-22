@@ -1,12 +1,20 @@
+require('dotenv').config();
+
+const { NODE_ENV, JWT_SECRET } = process.env;
 const jwt = require('jsonwebtoken');
 const UnauthorizedError = require('../errors/UnauthorizedError');
 
-const secretKey = 'e48c8af56d8193adabd0723df4fddfdbebbd92d7420b14b5107b6731f211946a';
+let key;
+if (NODE_ENV === 'production') {
+  key = JWT_SECRET;
+} else {
+  key = 'dev-secret';
+}
 
 function createToken(payload) {
   return jwt.sign(
     payload,
-    secretKey,
+    key,
     { expiresIn: '7d' },
   );
 }
@@ -19,7 +27,7 @@ const auth = (req, res, next) => {
   const token = authorization.replace('Bearer ', '');
   let payload;
   try {
-    payload = jwt.verify(token, secretKey);
+    payload = jwt.verify(token, key);
   } catch (err) {
     return next(new UnauthorizedError('Неправильные почта или пароль'));
   }
