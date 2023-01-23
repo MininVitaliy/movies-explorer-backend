@@ -13,4 +13,4 @@
 3. Схемы и модули созданы
 4. Описан APP
 5. Указана отработка ошибок
-   Ссылка на проект: https://github.com/MininVitaliy/express-mesto-gha
+   Ссылка на проект - виртуальная машина: https://api.diploma.mininvitali.nomoredomains.rocks
