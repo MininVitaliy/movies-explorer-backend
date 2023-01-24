@@ -23,7 +23,7 @@ Content-Type: application/json
 {
   "country": "22222Россияжжж,,,GER GER11",
   "director": "Виталя",
-  "duration": "23",
+  "duration": "26",
   "year": "1990 год",
   "description": "Тупой фильм",
   "image": "https://ic.pics.livejournal.com/bav_eot/44066703/942996/942996_original.jpg",
@@ -91,9 +91,9 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "email": "vitlas@11ppas-ddwlЮ.ru",
+  "email": "vitlas@ddd11ppasd.ru",
   "password": "mnlmkkdadjja",
-  "name": "lА"
+  "name": "was"
 }
 ###
 

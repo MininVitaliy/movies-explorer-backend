@@ -8,13 +8,15 @@ const { handlerErrors } = require('./middlewares/handlerErrors');
 const routes = require('./routes/routes');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
+const { mongo } = process.env;
+
 const PORT = 3000;
 const app = express();
 
 app.use(express.json());
 app.use(helmet());
-app.use(limiter);
 app.use(requestLogger);
+app.use(limiter);
 app.use(handlerCors);
 app.get('/crash-test', () => {
   setTimeout(() => {
@@ -29,7 +31,7 @@ app.use(errors());
 app.use(handlerErrors);
 
 mongoose.set('strictQuery', false);
-mongoose.connect('mongodb://localhost:27017/bitfilmsdb', {
+mongoose.connect(mongo, {
   useNewUrlParser: true,
 }, () => {
   app.listen(PORT);
