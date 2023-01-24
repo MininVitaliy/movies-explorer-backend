@@ -8,7 +8,7 @@ const { handlerErrors } = require('./middlewares/handlerErrors');
 const routes = require('./routes/routes');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
-const { mongo } = process.env;
+const { MONGO } = process.env;
 
 const PORT = 3000;
 const app = express();
@@ -31,7 +31,7 @@ app.use(errors());
 app.use(handlerErrors);
 
 mongoose.set('strictQuery', false);
-mongoose.connect(mongo, {
+mongoose.connect(MONGO, {
   useNewUrlParser: true,
 }, () => {
   app.listen(PORT);
