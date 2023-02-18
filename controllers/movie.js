@@ -6,7 +6,8 @@ const { SUCCESS, CREATED } = require('../constants');
 
 const getMovie = async (req, res, next) => {
   try {
-    const movies = await movieNew.find({}).populate(['owner']);
+    const { _id } = req.user;
+    const movies = await movieNew.find({owner: _id}).populate(['owner']);
     return res.status(SUCCESS).json(movies);
   } catch (e) {
     return next(e);

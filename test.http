@@ -17,7 +17,8 @@ POST http://localhost:3000/movies/
 Accept: application/json
 //Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzlkZDQ5NzhlYzA3MTNjNDQ4NWY0MzAiLCJpYXQiOjE2NzEyODc5OTQsImV4cCI6MTY3MTg5Mjc5NH0.B93VNkxWJuthkOrX16PuWDVkw6Nwfy9KzcMXwcgAvIk
 //Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2NjMDFhYjYyMzk1NTYzYTNkMmMyZGYiLCJpYXQiOjE2NzQzMTQ4ODEsImV4cCI6MTY3NDkxOTY4MX0.AUk4G6Q-rZECLfr5r3RAf8SxgXxZq8CUtx49i7uZysM
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2NjZjNhNjcyMTA2ZjE2ZDAwMGZjZDMiLCJpYXQiOjE2NzQzNzYyMDEsImV4cCI6MTY3NDk4MTAwMX0.Hfu0UNfFlMsGU2qNcDhxCSlX69Arhpg91L7bqVmhehc
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2NjZjNhNjcyMTA2ZjE2ZDAwMGZjZDMiLCJpYXQiOjE2NzQzNzYyMDEsImV4cCI6MTY3NDk4MTAwMX0.Hfu0UNfFlMsGU2qNcDhxCSlX69Arhpg91L7bqVmhehc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2YwNzFhMWExMjQxOTU3YzU3OWI3ZDUiLCJpYXQiOjE2NzY3MDIxMzYsImV4cCI6MTY3NzMwNjkzNn0.sXh40oOuKw3H1vOtxuyHS85z5kuZiaairK3fwibVSII
 Content-Type: application/json
 
 {
@@ -60,14 +61,17 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "email": "vitla@ddwssssaasaslladdddllll.ru",
+  "email": "vitlas11ppas@ddwssssaasaslladdddllll.ru",
   "password": "mnlmkkdadjja"
 }
 ###
 GET http://localhost:3000/movies
 //Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1ZmFlNDkwY2RiMGRlMWM4ODZjM2QiLCJpYXQiOjE2NzA4NjkyNTksImV4cCI6MTY3MTQ3NDA1OX0.nHcKs385f_KQKUDVv0fT5jffMQUVJSmbPXU_ABj9y6o
 //Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2NjMDFhYjYyMzk1NTYzYTNkMmMyZGYiLCJpYXQiOjE2NzQzMTQ4ODEsImV4cCI6MTY3NDkxOTY4MX0.AUk4G6Q-rZECLfr5r3RAf8SxgXxZq8CUtx49i7uZysM
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2NjZjNhNjcyMTA2ZjE2ZDAwMGZjZDMiLCJpYXQiOjE2NzQzNzYyMDEsImV4cCI6MTY3NDk4MTAwMX0.Hfu0UNfFlMsGU2qNcDhxCSlX69Arhpg91L7bqVmhehc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2YwNzFhMWExMjQxOTU3YzU3OWI3ZDUiLCJpYXQiOjE2NzY3MDIxMzYsImV4cCI6MTY3NzMwNjkzNn0.sXh40oOuKw3H1vOtxuyHS85z5kuZiaairK3fwibVSII
+
+
+//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2NjZjNhNjcyMTA2ZjE2ZDAwMGZjZDMiLCJpYXQiOjE2NzQzNzYyMDEsImV4cCI6MTY3NDk4MTAwMX0.Hfu0UNfFlMsGU2qNcDhxCSlX69Arhpg91L7bqVmhehc
 ###
 PATCH http://localhost:3000/users/me
 //Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2NjMDFhYjYyMzk1NTYzYTNkMmMyZGYiLCJpYXQiOjE2NzQzMTQ4ODEsImV4cCI6MTY3NDkxOTY4MX0.AUk4G6Q-rZECLfr5r3RAf8SxgXxZq8CUtx49i7uZysM
@@ -91,9 +95,9 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "email": "vitlas@ddd11ppasd.ru",
+  "email": "was@ddd11ppasd.ru",
   "password": "mnlmkkdadjja",
-  "name": "was"
+  "name": "waswaswa"
 }
 ###
 
