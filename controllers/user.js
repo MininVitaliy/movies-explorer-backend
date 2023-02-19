@@ -21,7 +21,7 @@ const getUser = async (req, res, next) => {
 
 const changeUser = async (req, res, next) => {
   try {
-    const profile = await userNew.findByIdAndUpdate(
+    const user = await userNew.findByIdAndUpdate(
       req.user._id,
       {
         email: req.body.email,
@@ -29,10 +29,10 @@ const changeUser = async (req, res, next) => {
       },
       { new: true, runValidators: true },
     );
-    if (profile === null) {
+    if (user === null) {
       return next(new NotFoundError('Пользователь не найден'));
     }
-    return res.status(SUCCESS).json({ profile });
+    return res.status(SUCCESS).json({ user });
   } catch (e) {
     if (e.name === 'ValidationError') {
       return next(new ErrorCode('Переданы некорректные данные'));
