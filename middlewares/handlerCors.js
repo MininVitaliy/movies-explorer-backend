@@ -1,6 +1,6 @@
 const allowedCors = [
-  'https://mesto.russia.student.nomoredomains.club', //!!!!
-  'http://mesto.russia.student.nomoredomains.club', //!!!!
+  'https://diploma.mininvitali.nomor.nomoredomains.work',
+  'http://diploma.mininvitali.nomor.nomoredomains.work',
   'http://localhost:3000',
 ];
 
