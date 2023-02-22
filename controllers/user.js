@@ -37,6 +37,9 @@ const changeUser = async (req, res, next) => {
     if (e.name === 'ValidationError') {
       return next(new ErrorCode('Переданы некорректные данные'));
     }
+    if (e.code === 11000) {
+      return next(new ConflictError('Указанный email уже занят'));
+    }
     return next(e);
   }
 };
